@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/loginStyle.css" />
+    <title>Inicio de Sesión</title>
+  </head>
+  <body>
+    </script>
+    <div class="loginbox">
+      <img
+        class="loginicon"
+        src="img/userIconwhite.png"
+        alt="Icono de usuario"
+      />
+      <h1>CINEMARTS</h1>
+      <h2>INICIO DE SESIÓN</h2>
+      <form id="formulario">
+        <section class="inputBox">
+          <input type="text" placeholder="Usuario" name="user-a" id="usuario" />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            name="passwd-a"
+            id="password"
+            autocomplete="on"
+          />
+        </section>
+      </form>
+      <section class="btn">
+        <div class="ini">
+          <button onclick="validar();">
+            <a>Iniciar Sesion</a>
+          </button>
+        </div>
+        <div class="sin">
+          <button onclick="window.location.href='cartelera.html'">
+            Sin Cuenta
+          </button>
+        </div>
+      </section>
+      <div class="linksBox">
+        <a class="resetPassword" href="#">Recuperar Contraseña</a>
+        <a class="createAccount" href="#">Crear Cuenta</a>
+      </div>
+    </div>
+    <script>
+      const user1 = "Quiquerman";
+      const passwd1 = "fritada01";
+      const user2 = "Davit";
+      const passwd2 = "12345";
+
+      const forma = document.forms["formulario"];
+      const usr = forma["user-a"];
+      const passwd = forma["passwd-a"];
+
+      function validar() {
+        if (usr.value === user1 && passwd.value === passwd1) {
+          window.location.href = "cartelera.html";
+        }else if (usr.value === user2 && passwd.value === passwd2) {
+          window.location.href = "cartelera.html";
+        }else {
+          alert("Contraseña o Usuario incorrectos!");
+        }
+      }
+    </script>
+  </body>
+</html>

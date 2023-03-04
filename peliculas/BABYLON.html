@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMARTS</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="../css/peliculaStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />-->
+  </head>
+  <link rel="stylesheet" href="../root.css" />
+  <body>
+    <header class="topheader">
+      <h1>CINEMARTS</h1>
+      <br />
+      <nav class="topnav">
+        <button class="open-menu" aria-label="Abrir menu">
+          <img src="../img/menuA.svg" alt="" id="sad" />
+        </button>
+        <!--<input  type="text" placeholder="Buscar..."><button>Buscar</button>-->
+        <ul class="menu">
+          <button class="close-menu" aria-label="cerrar menu">
+            <img src="../img/closed.png" alt="" id="des" />
+          </button>
+          <li><a href="/cartelera.html">ESTRENOS</a></li>
+          <li><a href="#">ADMINISTRAR CUENTA</a></li>
+          <li><a href="/cartelera.html">CARTELERA</a></li>
+          <li><a href="/index.html">CERRAR SESION</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="texto">
+      <img class="img" src="../img/babylon.jpg" alt="" />
+      <div>
+        <h2 class="txt">BABYLON</h2>
+        <p>
+          Del oscarizado director, Damien Chazelle, BABYLON es una historia
+          épica original ambientada en Los Ángeles durante la década de 1920,
+          protagonizada por Brad Pitt, Margot Robbie y Diego Calva, junto a un
+          reparto coral donde destacan Jovan Adepo, Li Jun Li y Jean Smart. Una
+          historia de ambición y excesos desmesurados que recorre la ascensión y
+          caída de múltiples personajes durante una época de desenfrenada
+          decadencia y depravación en los albores de Hollywood.
+        </p>
+      </div>
+    </div>
+    <button class="button" onclick="window.location.href='babylonBuy.html'">
+      Comprar Ticket
+    </button>
+    <div><h1 class="triler">TRAILER</h1></div>
+    <br />
+    <div class="triller">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UKSgMMgE4xo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script src="../js/mani.js"></script>
+  </body>
+</html>

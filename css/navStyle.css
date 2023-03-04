@@ -1,0 +1,110 @@
+.topheader {
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0 4px 5px var(--theme-color);
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.topheader > h2 {
+  height: 1%;
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  text-align: center;
+  color: var(--navbar-shallow-color);
+}
+.topnav {
+  display: fixed;
+  justify-content: space-evenly;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.topnav #sad {
+  margin-bottom: -35%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.topnav #des {
+  border-style: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.topnav input {
+  margin: 0px 0px 25px;
+  height: 20px;
+  color: black;
+  width: 80%;
+  background-position-x: left;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 25%;
+  align-items: center;
+  background-color: rgb(131, 131, 131);
+  height: 100%;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.menu li {
+  padding: 0;
+}
+.menu a {
+  color: var(--text-color);
+  font-size: 25px;
+  line-height: 70px;
+}
+.menu a::after {
+  content: "";
+  background-color: black;
+  left: 0;
+  top: 100%;
+  width: calc(100% + 4px);
+  height: 4px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.menu a:hover::after {
+  opacity: 0.8;
+}
+.menu a:hover {
+  color: blue;
+}
+
+.open-menu {
+  background: none;
+  border: none;
+  align-self: flex-end;
+}
+.close-menu {
+  float: right;
+  align-items: end;
+  background: none;
+  border: none;
+}
+.menu_opened {
+  opacity: 1;
+  pointer-events: all;
+}
+.hover:hover {
+  color: rgb(81, 18, 18);
+  transition: 500ms all;
+  cursor: pointer;
+}

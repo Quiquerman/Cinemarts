@@ -1,0 +1,436 @@
+:root {
+  --theme-color: #010208;
+  --primary-color: #6b6c6c;
+  --secundary-color: #f7c331;
+  --text-color-inverse: white;
+  --text-color: rgb(255, 255, 255);
+  --navbar-shallow-color: #801919;
+  --menu-mobile-background--color: #3a4460;
+}
+.topheader {
+  z-index: 1;
+  position: fixed;
+  box-shadow: 0 4px 5px var(--theme-color);
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.topheader > h1 {
+  height: 1%;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.topnav {
+  display: fixed;
+  justify-content: space-evenly;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.topnav #sad {
+  margin-bottom: -35%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.topnav #des {
+  border-style: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.topnav input {
+  margin: 0px 0px 25px;
+  height: 20px;
+  color: black;
+  width: 80%;
+  background-position-x: left;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 25%;
+  align-items: center;
+  background-color: rgb(131, 131, 131);
+  height: 100%;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.menu li {
+  padding: 0;
+}
+.menu a {
+  color: var(--text-color);
+  font-size: 25px;
+  line-height: 70px;
+}
+.menu a::after {
+  content: "";
+  background-color: black;
+  left: 0;
+  top: 100%;
+  width: calc(100% + 4px);
+  height: 4px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.menu a:hover::after {
+  opacity: 0.8;
+}
+.menu a:hover {
+  color: blue;
+}
+
+.open-menu {
+  background: none;
+  border: none;
+  align-self: flex-end;
+}
+.close-menu {
+  float: right;
+  align-items: end;
+  background: none;
+  border: none;
+}
+.menu_opened {
+  opacity: 1;
+  pointer-events: all;
+}
+.hover:hover {
+  color: rgb(81, 18, 18);
+  transition: 500ms all;
+  cursor: pointer;
+}
+body {
+  background-color: var(--theme-color);
+  background: #010208;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-items: center;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+section h3 {
+  color: white;
+  font-size: 30px;
+  margin: 5px 0 35px 0;
+}
+
+.postermovie {
+  position: absolute;
+  top: 170px;
+  margin-left: 180px;
+  height: 390px;
+  width: 275px;
+  border-radius: 7px;
+}
+
+.detallesCompra {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 15px;
+  margin-top: 150px;
+  width: 50%;
+  margin-left: 40%;
+}
+
+.option-field {
+  color: #010208;
+  background: white;
+  text-align: center;
+  font-size: 15px;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.tarjeta-field {
+  margin: 20px 0 0 0;
+}
+
+#numtarjeta {
+  border: none;
+  outline: none;
+  width: 248px;
+  height: 35px;
+  border-radius: 6px;
+  margin: 0 0 20px;
+}
+
+.qwerty {
+  display: flex;
+  flex-direction: column;
+  margin: -113px 0 0 300px;
+}
+
+#fechatarjeta {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  margin: 0 0 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#cvvfield {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  margin: 0 0 20px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.selected {
+  border: none;
+  outline: none;
+  margin: 0 50px 30px 0;
+  height: 35px;
+  width: 250px;
+  border-radius: 7px;
+}
+
+#asientos-field {
+  border: none;
+  outline: none;
+  width: 248px;
+  height: 35px;
+  border-radius: 6px;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 20vh;
+  }
+  .topheader {
+    z-index: 5;
+    position: fixed;
+    box-shadow: 0 4px 5px var(--theme-color);
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .topheader > h1 {
+    margin-right: 5%;
+    height: 20%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: center;
+    color: var(--text-color);
+  }
+  .topnav {
+    display: fixed;
+    justify-content: space-evenly;
+    max-width: 980px;
+    margin: -14px 0 10px 0px;
+  }
+  .topnav #sad {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .topnav #des {
+    border-style: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .topnav input {
+    margin: 0px 0px 25px;
+    height: 20px;
+    color: black;
+    width: 80%;
+    background-position-x: left;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .menu {
+    list-style: none;
+    margin: 120px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 90%;
+    align-items: center;
+    background-color: rgb(131, 131, 131);
+    height: 50%;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+
+  .menu a::after {
+    content: "";
+    background-color: black;
+    left: 0;
+    top: 100%;
+    width: calc(100% + 4px);
+    height: 4px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: var(--text-color);
+    font-size: 25px;
+    line-height: 70px;
+  }
+  .menu a:hover {
+    color: white;
+  }
+
+  .open-menu {
+    background: none;
+    border: none;
+    align-self: flex-end;
+  }
+  .close-menu {
+    float: right;
+    align-items: end;
+    background: none;
+    border: none;
+  }
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  section h3 {
+    color: white;
+    font-size: 25px;
+    margin-top: -120%;
+    margin-bottom: 100%;
+  }
+  .posters {
+    display: contents;
+    height: 10%;
+    width: 100%;
+    margin: 30px 0 50px;
+  }
+  .postermovie {
+    display: block;
+    margin-top: 5%;
+    margin-left: 4%;
+    height: 45%;
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .detallesCompra {
+    display: fixed;
+    flex-direction: column;
+    border: none;
+    border-radius: 7px;
+    width: 250%;
+    height: 125%;
+    margin-top: 400%;
+    margin-left: 5%;
+  }
+
+  .option-field {
+    color: #010208;
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+  }
+
+  #numtarjeta {
+    border: none;
+    outline: none;
+    width: 248px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 0 20px;
+  }
+
+  .qwerty {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+  }
+
+  #fechatarjeta {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 0 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #cvvfield {
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 0 20px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .selected {
+    border: none;
+    outline: none;
+    margin: 0 50px 30px 0;
+    height: 35px;
+    width: 250px;
+    border-radius: 7px;
+  }
+
+  #asientos-field {
+    border: none;
+    outline: none;
+    width: 248px;
+    height: 35px;
+    border-radius: 6px;
+    margin: 0 0 20px;
+  }
+}

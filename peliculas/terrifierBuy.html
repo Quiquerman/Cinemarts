@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/buyTicketStyle.css" />
+    
+    <title>Compra tu entrada!</title>
+  </head>
+  <body>
+    <header class="topheader">
+      <h1>COMPRA DE TICKET</h1>
+      <nav class="topnav">
+        <button class="open-menu" aria-label="Abrir menu">
+          <img src="../img/menuA.svg" alt="" id="sad" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="cerrar menu">
+            <img src="../img/closed.png" alt="" id="des" />
+          </button>
+          <li><a href="/cartelera.html">ESTRENOS</a></li>
+          <li><a href="/cartelera.html">CARTELERA</a></li>
+          <li><a href="/index.html">CERRAR SESION</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="posters">
+      <img
+        src="../img/terrifier.jpg"
+        alt="poster de pelicula"
+        class="postermovie"
+      />
+    </div>
+    <section class="detallesCompra">
+      <h3>TERRIFER 2</h3>
+      <div class="option-field">
+        <input type="radio" value="credito" name="op" checked /> Crédito
+        &nbsp;&nbsp; <input type="radio" value="debito" name="op" /> Débito
+        &nbsp;&nbsp;
+      </div>
+      <div class="tarjeta-field">
+        <input
+          type="text"
+          name="numeroTarjeta"
+          placeholder="Numero de Trajeta"
+          id="numtarjeta"
+        />
+      </div>
+      <section class="qwerty">
+        <div class="fecha-field">
+          <input type="date" name="fechaTarjeta" id="fechatarjeta" />
+        </div>
+        <div>
+          <input type="text" name="cvvTarjeta" placeholder="cvv" id="cvvfield"/>
+        </div>
+      </section>
+      <div>
+        <h4>Información de Ticket</h4>
+        <select class="selected" id="ubicaciones">
+          <option selected disabled value="opcion">
+            Seleccione la ubicacion de Cine
+          </option>
+          <option>Metrocentro, San Salvador 7ma etapa</option>
+          <option>Metrocentro, Sonsonate 2da etapa</option>
+          <option>Metrocentro, Cuscatlan 1er etapa</option>
+        </select>
+
+        <select class="selected" id="ubicaciones">
+          <option selected disabled value="opcion">Seleccione la Sala</option>
+          <option>Sala 1</option>
+          <option>Sala 2</option>
+          <option>Sala 3</option>
+          <option>Sala 4</option>
+        </select>
+        <div>
+          <input type="text" name="asientos" placeholder="Asiento/s" id="asientos-field"/>
+        </div>
+      </div>
+    </section>
+    <script src="../js/mani.js"></script>
+  </body>
+</html>

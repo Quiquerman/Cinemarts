@@ -1,0 +1,342 @@
+body{
+  background-color: #010208;
+  margin: 0;
+}
+
+span{
+   color: white;
+   width: 100px;
+   height: 100px;
+}
+
+button{
+   cursor: pointer;
+   background: white;
+   height: 28px;
+
+}
+.topheader {
+   z-index: 1;
+   position: fixed;
+   box-shadow: 0 4px 5px var(--theme-color);
+   background-color: var(--theme-color);
+   left: 0;
+   top: 0;
+   width: 100%;
+   padding: 0 100px;
+}
+.topheader > h1 {
+   height: 100%;
+   font-size: 40px;
+   font-family: "Montserat", sans-serif;
+   margin-right: 10%;
+   position:relative;
+   text-align: center;
+   color: var(--text-color);
+   
+}
+.topnav {
+   display: fixed;
+   justify-content: space-evenly;
+   max-width: 980px;
+   margin: 0px -5px;
+
+}
+.topnav #sad {
+   margin-bottom: -35%;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+}
+.topnav #des{
+   border-style: none;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+}
+ 
+.topnav input {
+   margin: 0px 0px 25px;
+   height: 20px;
+   color: black;
+   width: 80%;
+   background-position-x: left;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   font-weight: 500;
+}
+ 
+.menu {
+ list-style: none;
+   margin: 0;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 25%;
+   align-items: center;
+   background-color: #363B3A;
+   height: 100%;
+   overflow: auto;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 0.5s ease;
+}
+
+.menu a {
+ text-decoration:none;
+   color: var(--text-color);
+   font-size: 25px;
+   line-height: 70px;
+}
+
+.menu a:hover::after {
+   opacity: 0.8;
+}
+.menu a:hover {
+     color: rgb(6, 192, 161);
+}
+ 
+.open-menu{
+   background: none;
+     border: none;
+   align-self: flex-end;
+   margin-top: -30px;
+}
+.close-menu {
+ 
+   float: right;
+   background: none;
+     border: none;
+}
+.menu_opened {
+   opacity: 1;
+   pointer-events: all;
+}
+.texto{
+    z-index: -1;
+    display: flex;
+    align-items:normal ;
+    justify-content:flex-start;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    padding: 200px 200px 0px;
+}
+.txt{
+   align-items: center;
+   text-align: center;
+}
+.img{
+
+   width: 230px;
+   height: 330px;
+   margin-right: 15px;
+   border-radius: 8px;
+   position:sticky;
+}
+
+.button{
+ margin: 20px 0 0 250px;
+   cursor:pointer;
+   background-color:white;
+   width:150px;
+   height: 45px;
+   border-radius: 4px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+.triller{
+   text-align: center;
+}
+.video{
+   width: 600px;
+   height: 300px;
+   border-radius: 10px;
+}
+body p{
+   text-align:justify;
+}
+form{
+   padding: 0 200px;
+}
+.Ci{
+   color: white;
+}
+.triler{
+   color: white;
+   text-align: center;
+   font-family: cursive;
+}
+@media (max-width: 950px){
+   .topheader {
+       z-index: 5;
+       position: fixed;
+       box-shadow: 0 4px 5px var(--theme-color);
+       background-color: var(--theme-color);
+       left: 0;
+       top: 0;
+       width: 100%;
+     }
+     .topheader > h1 {
+ 
+       margin-right: 50%;
+       height: 20%;
+       font-size: 20px;
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       position: center;
+       color: var(--text-color);
+
+     }
+     .topnav {
+       display: fixed;
+       justify-content: space-evenly;
+       max-width: 980px;
+       margin: -43px 0 0px -60px;
+     }
+     .topnav #sad {
+
+       height: 30px;
+       width: 30px;
+       cursor: pointer;
+     }
+     .topnav #des {
+       border-style: none;
+       height: 30px;
+       width: 30px;
+       cursor: pointer;
+     }
+     
+     .topnav input {
+       margin: 0px 0px 25px;
+       height: 20px;
+       color: black;
+       width: 80%;
+       background-position-x: left;
+     }
+     .logo {
+       display: flex;
+       align-items: center;
+       font-size: 18px;
+       font-weight: 500;
+     }
+     
+     .menu {
+       list-style: none;
+       margin: 50px 0 ;
+       position: fixed;
+       left: 0;
+       top: 0;
+       width: 90%;
+       align-items: center;
+       background-color: rgb(131, 131, 131);
+       height: 50%;
+       overflow: auto;
+       opacity: 0;
+       pointer-events: none;
+       transition: all 0.5s ease;
+     }
+
+     .menu a::after {
+       content: "";
+       background-color: black;
+       left: 0;
+       top: 100%;
+       width: calc(100% + 4px);
+       height: 4px;
+       opacity: 0;
+       transition: all 0.3s ease;
+     }
+     .menu li {
+       padding: 0;
+     }
+     .menu a {
+       color: var(--text-color);
+       font-size: 25px;
+       line-height: 70px;
+     }
+     .menu a:hover {
+       color: white;
+     }
+     
+     .open-menu {
+       background: none;
+       border: none;
+       align-self: flex-end;
+     }
+     .close-menu {
+       float: right;
+       align-items: end;
+       background: none;
+       border: none;
+     }
+     .menu_opened {
+       opacity: 1;
+       pointer-events: all;
+     }
+   .texto{
+     height: 0px;
+        z-index: -1;
+        align-items:center;
+        justify-content:flex-end;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:40% 3% ;
+   }
+   .txt{
+       align-items:center;
+       text-align: center;
+   }
+   .img{
+   
+       width: 200px;
+       height: 300px;
+       margin-right: 25px;
+       border-radius: 8px;
+       position:static;
+
+   }
+   .TEX2{
+       font-family:cursive;
+       color:white;
+       text-align:left;
+       font-size: 3em;
+       padding: 50px 50px 0;
+   }
+   .button{
+     margin: 0px 0 0;
+       cursor:pointer;
+       background-color:white;
+       width:150px;
+       height: 45px;
+       border-radius: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+   }
+   .triller{
+       text-align: center;
+   }
+   .video{
+       width: 450px;
+       height: 280px;
+       border-radius: 10px;
+       position:relative;
+   }
+   body p{
+       text-align:justify;
+   }
+   form{
+       position: relative;
+       padding: 40px;
+   }
+   .Ci{
+       color: white;
+   }
+   .triler{
+       color: white;
+       text-align: center;
+       font-family: cursive;
+   }    
+}
