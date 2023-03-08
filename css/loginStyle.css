@@ -244,19 +244,17 @@ body {
     font-size: 18px;
   }
   .sin button:hover{
-    background-color: rgb(109, 233, 150);
+    background-color: var(--background-color);
     color: white;
     border: solid 2px white;
     font-weight: bolder;
-    text-transform: uppercase;
   }
 
   .ini button:hover{
-    background-color: rgb(109, 233, 150);
+    background-color: var(--background-color);
     color: white;
     border: solid 2px white;
     font-weight: bolder;
-    text-transform: uppercase;
   }
 
   .linksBox .createAccount,.resetPassword

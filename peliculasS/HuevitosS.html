@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMARTS</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="../css/peliculaStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />-->
+  </head>
+  <link rel="stylesheet" href="../css/root.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <body>
+    <header class="topheader">
+      <h1>CINEMARTS</h1>
+      <br />
+      <nav class="topnav">
+        <button class="open-menu" aria-label="Abrir menu">
+          <img src="../img/menuA.svg" alt="" id="sad" />
+        </button>
+        <!--<input  type="text" placeholder="Buscar..."><button>Buscar</button>-->
+        <ul class="menu">
+          <button class="close-menu" aria-label="cerrar menu">
+            <img src="../img/closed.png" alt="" id="des" />
+          </button>
+          <li><a href="/carteleraS.html">ESTRENOS</a></li>
+          <li><a href="/carteleraS.html">CARTELERA</a></li>
+          <li><a href="/index.html">INICIAR SESION</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="texto">
+      <img class="img" src="../img/huevos.jpg" alt="" />
+      <div>
+        <h2 class="txt">HUEVITOS CONGELADOS</h2>
+        <p>
+          Toto y su familia, que tendrán que viajar al Polo Sur para cumplir la
+          promesa de devolver a un oso polar y a unos pingüinos españoles a su
+          hogar. Para lograr cumplir la promesa, tendrán que superar algunos
+          obstáculos que les enseñarán lo importante que es el trabajo en
+          equipo.
+        </p>
+      </div>
+    </div>
+    <button class="button" onclick="window.location.href='huevosBuyS.html'">
+      Comprar Ticket
+    </button>
+    <div><h1 class="triler">TRAILER</h1></div>
+    <br />
+    <div class="triller">
+      <iframe
+      width="400"
+      height="300"
+        src="https://www.youtube.com/embed/gSRdwjQUePs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script src="../js/mani.js"></script>
+    <script src="/js/generates.js"></script>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#" onclick="nTAb();">sobre nosotros</a></li>
+              <li><a href="#">politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">politica de devoluciones</a></li>
+              <li><a href="#">opciones de pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>siguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  </body>
+</html>

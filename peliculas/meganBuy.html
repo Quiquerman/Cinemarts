@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/buyTicketStyle.css" />
+    <link rel="stylesheet" href="/css/footer.css">
     
     <title>Compra tu entrada!</title>
   </head>
@@ -75,11 +76,43 @@
           <option>Sala 3</option>
           <option>Sala 4</option>
         </select>
-        <div>
-          <input type="text" name="asientos" placeholder="Asiento/s" id="asientos-field"/>
-        </div>
+       <div>
+          <p onclick="generateSit();" id="asientos-field">
+            Asiento
+          </p>
       </div>
     </section>
     <script src="../js/mani.js"></script>
+    <script src="../js/generates.js"></script>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#" onclick="nTAb();">sobre nosotros</a></li>
+              <li><a href="#">politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">politica de devoluciones</a></li>
+              <li><a href="#">opciones de pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>siguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
   </body>
 </html>

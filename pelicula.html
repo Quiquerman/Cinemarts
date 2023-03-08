@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,6 +20,7 @@
     />
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />--></head
   ><link rel="stylesheet" href="/css/root.css" />
+  <link rel="stylesheet" href="./css/footerCreed.css">
   <body>
     <header class="topheader">
       <h1>CINEMARTS</h1>
@@ -43,14 +44,16 @@
       <img class="img" src="./img/creed.jpg" alt="" />
       <div>
         <h2 class="txt"> Creed |||</h2>
-        <p>Después de dominar el mundo del boxeo, Adonis Creed ha progresado
+        <p>
+          Después de dominar el mundo del boxeo, Adonis Creed ha progresado
           tanto en su carrera como en su vida familiar. Cuando Damian (Jonathan
           Majors), un amigo de la infancia y antiguo prodigio del boxeo,
           reaparece después de cumplir una larga condena en prisión, Adonis
           Creed quiere demostrar que merece una oportunidad en el ring. El
           enfrentamiento entre estos antiguos amigos es algo más que una simple
           pelea. Para ajustar cuentas, Adonis debe arriesgar su futuro para
-          enfrentarse a Damian, un boxeador que no tiene nada que perder.</p>
+          enfrentarse a Damian, un boxeador que no tiene nada que perder.
+        </p>
       </div>
     </div>
     <button class="button" onclick="window.location.href='comprarTicket.html'">
@@ -60,9 +63,8 @@
     <br />
     <div class="triller">
       <iframe
-      
-        width="600"
-        height="500"
+        width="800"
+        height="450"
         src="https://www.youtube.com/embed/xTaIZo8OJYE"
         title="YouTube video player"
         frameborder="0"
@@ -71,5 +73,36 @@
       ></iframe>
     </div>
     <script src="./js/mani.js"></script>
+    <script src="/js/generates.js"></script>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#" onclick="nTAb();">sobre nosotros</a></li>
+              <li><a href="#">politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">politica de devoluciones</a></li>
+              <li><a href="#">opciones de pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>siguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
   </body>
 </html>

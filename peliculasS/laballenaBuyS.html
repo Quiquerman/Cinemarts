@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/buyTicketStyle.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <title>Compra tu entrada!</title>
+  </head>
+  <body>
+    <header class="topheader">
+      <h1>COMPRA DE TICKET</h1>
+      <nav class="topnav">
+        <button class="open-menu" aria-label="Abrir menu">
+          <img src="../img/menuA.svg" alt="" id="sad" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="cerrar menu">
+            <img src="../img/closed.png" alt="" id="des" />
+          </button>
+          <li><a href="/carteleraS.html">ESTRENOS</a></li>
+          <li><a href="/carteleraS.html">CARTELERA</a></li>
+          <li><a href="/index.html">INICIAR SESION</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="posters">
+      <img
+        src="../img/laballena.jpeg"
+        alt="poster de pelicula"
+        class="postermovie"
+      />
+    </div>
+
+    <section class="detallesCompra">
+      <h3>LA BALLENA</h3>
+      <div class="option-field">
+        <input type="radio" value="credito" name="op" checked /> Crédito
+        &nbsp;&nbsp; <input type="radio" value="debito" name="op" /> Débito
+        &nbsp;&nbsp;
+      </div>
+      <div class="tarjeta-field">
+        <input
+          type="text"
+          name="numeroTarjeta"
+          placeholder="Numero de Trajeta"
+          id="numtarjeta"
+        />
+      </div>
+      <section class="qwerty">
+        <div class="fecha-field">
+          <input type="date" name="fechaTarjeta" id="fechatarjeta" />
+        </div>
+        <div>
+          <input type="text" name="cvvTarjeta" placeholder="cvv" id="cvvfield"/>
+        </div>
+      </section>
+      <div>
+        <h4>Información de Ticket</h4>
+        <select class="selected" id="ubicaciones">
+          <option selected disabled value="opcion">
+            Seleccione la ubicacion de Cine
+          </option>
+          <option>Metrocentro, San Salvador 7ma etapa</option>
+          <option>Metrocentro, Sonsonate 2da etapa</option>
+          <option>Metrocentro, Cuscatlan 1er etapa</option>
+        </select>
+
+        <select class="selected" id="ubicaciones">
+          <option selected disabled value="opcion">Seleccione la Sala</option>
+          <option>Sala 1</option>
+          <option>Sala 2</option>
+          <option>Sala 3</option>
+          <option>Sala 4</option>
+        </select>
+       <div>
+          <p onclick="generateSit();" id="asientos-field">
+            Asiento
+          </p>
+      </div>
+    </section>
+    <script src="../js/mani.js"></script>
+    <script src="../js/generates.js"></script>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#" onclick="nTAb();">sobre nosotros</a></li>
+              <li><a href="#">politica de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">politica de devoluciones</a></li>
+              <li><a href="#">opciones de pago</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>siguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+  </body>
+</html>

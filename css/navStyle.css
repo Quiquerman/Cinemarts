@@ -108,3 +108,7 @@
   transition: 500ms all;
   cursor: pointer;
 }
+
+@media (max-width: 950px){
+  
+}
